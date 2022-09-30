@@ -10,7 +10,7 @@ services:
     volumes:
       - students:/var/lib/postgresql/data
 
-  node_app_students:
+  node_students:
     container_name: students_node
     build: .
     ports:
