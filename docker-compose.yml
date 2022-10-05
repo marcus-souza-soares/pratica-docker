@@ -4,7 +4,7 @@ services:
     container_name: db_students
     restart: always
     ports:
-      - 2300:5432
+      - 5555:5432
     env_file:
       - .env
     volumes:
@@ -14,7 +14,7 @@ services:
     container_name: students_node
     build: .
     ports:
-      - 5009:5000
+      - 5001:5000
     depends_on:
       - db_students
     env_file:
